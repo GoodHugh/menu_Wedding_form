@@ -1,4 +1,122 @@
 //====================================================================================================
+.header {
+	// .header__top
+	&__top {
+		background: #0d0a09;
+	}
+	// .header__container
+	&__container {
+		position: relative;
+	}
+}
+.line {
+	// .line__info
+	&__info {
+	}
+	// .line__info-list
+	&__info-list {
+		display: flex;
+		justify-content: space-between;
+		visibility: hidden;
+	}
+	// .line__info-list-item
+	&__info-list-item {
+		padding: 18px 0;
+	}
+	// .line__info-list-item-link
+	&__info-list-item-link {
+		font-family: Avenir;
+		font-size: 31px;
+		letter-spacing: 0.05em;
+		color: #464646;
+	}
+	// .line__image-ibg
+	&__image-ibg {
+		position: relative;
+		width: 100%;
+		min-height: 1027px;
+	}
+	// .line__image-bg
+	&__image-bg {
+		position: absolute;
+	}
+	// .line__image-mask
+	&__image-mask {
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .menu__item
+	&__item {
+		padding: 25px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .menu__link
+	&__link {
+		font-family: Baskerville;
+		font-size: 25px;
+		letter-spacing: 0.055em;
+		color: #0d0a09;
+		transition: all 0.5s ease;
+		@media(any-hover: hover){
+			&:hover {
+				color: #d59d40;
+				.menu__icon-sub{
+					top: 0;
+					opacity: 1;
+					transition: all 0.5s ease;
+					z-index: 0;
+				}
+			}
+		}
+	}
+	// .menu__icon-sub
+	&__icon-sub {
+		position: relative;
+		display: block;
+		width: 16px;
+		top: -10px;
+		opacity: 0;
+		z-index: -1;
+		transition: all 0.5s ease;
+		&::before{
+			content: '';
+			width: 10px;
+			height: 2px;
+			background-color: #d59d40;
+			left: 0;
+			top: 50%;
+			position: absolute;
+			transform: rotate(45deg);
+		}
+		&::after{
+			content: '';
+			width: 10px;
+			height: 2px;
+			background-color: #d59d40;
+			top: 50%;
+			right: 0;
+			position: absolute;
+			transform: rotate(135deg);
+		}
+	}
+	// .menu__sublist
+	&__sublist {
+		display: none;
+	}
+}
 
 //====================================================================================================
 

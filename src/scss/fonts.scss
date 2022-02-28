@@ -1,0 +1,32 @@
+//шаблон для вставки шрифта
+// @font-face { 
+//     font-family: "ParisSerifExtrablack";
+//     src: url("../fonts/ParisSerifExtrablack/ParisSerifExtrablack.eot");
+//     src: url("../fonts/ParisSerifExtrablack/ParisSerifExtrablack.eot?#iefix")format("embedded-opentype"),
+//     url("../fonts/ParisSerifExtrablack/ParisSerifExtrablack.woff") format("woff"),
+//     url("../fonts/ParisSerifExtrablack/ParisSerifExtrablack.ttf") format("truetype");
+//     font-style: normal;
+//     font-weight: normal;
+// }
+
+
+@font-face { 
+    font-family: "Paris";
+    src: url("../fonts/Parise.eot");
+    src: url("../fonts/Parise.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Parise.woff") format("woff"),
+    url("../fonts/Parise.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face { 
+    font-family: "Avenir";
+    src: url("../fonts/Avenir LT 55 Roman/avenirlt_roman.eot");
+    src: url("../fonts/Avenir LT 55 Roman/avenirlt_roman.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Avenir LT 55 Roman/avenirlt_roman.woff") format("woff"),
+    url("../fonts/Avenir LT 55 Roman/avenirlt_roman.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
