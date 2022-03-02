@@ -1,1 +1,21 @@
 // Заголовки, общие БЄМ блоки и проче...
+._paris-style {
+    font-family: Parise;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    color: #464646;
+}
+
+._avenir-style {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 41, 14, 1920, 320);
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+}
+
+._tab-active {
+    color: $mainColor;
+}
